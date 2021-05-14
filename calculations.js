@@ -23,11 +23,9 @@ function displaySwag(event) {
 }
 
 function calculateSwag(name, clothingColor, hairDye, handedness, accessoryCount) {
-    console.log(name, clothingColor, hairDye, handedness, accessoryCount);
     nameLength = name.length;
     clothingScore = COLOR_VALUES[clothingColor];
     hairScore = COLOR_VALUES[hairDye];
     handValue = handedness === 'right' ? 6 : 7;
-    console.log(nameLength, clothingScore, hairScore, handValue);
     return (((clothingScore / handValue) ^ (accessoryCount + 1)) / (hairScore + nameLength));    
 }
