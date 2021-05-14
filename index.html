@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Swag</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Swag Calculator</h1>
+        <form id="calculator">
+           <div class="choice">
+               <label for="name">First name:</label>
+               <input type="text" id="name" name="name" value="">   
+           </div>
+           <div class="choice">
+               <label for="selectHandedness">Handedness:</label>
+               <div id="selectHandedness">
+                   <input type="radio" id="right" name="handedness" checked value="right">
+                   <label for="right">Right</label>
+                   <input type="radio" id="left" name="handedness" value="left">
+                   <label for="left">Left</label>
+               </div>
+           </div>
+           <div class="choice">
+               <label for="hairDye">Hair dye color:</label>
+               <select id="hairDye" name="hairDye">
+                   <option value="red">Red</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="black">Black</option>
+                   <option value="white">White</option>
+                   <option value="purple">Purple</option>
+                   <option value="orange">Orange</option>
+                   <option value="none">Other/None</option>
+               </select>
+           </div>
+           <div class="choice">
+               <label for="clothingColor">Dominant clothing color:</label>
+               <select id="clothingColor" name="clothingColor">
+                   <option value="red">Red</option>
+                   <option value="yellow">Yellow</option>
+                   <option value="blue">Blue</option>
+                   <option value="green">Green</option>
+                   <option value="black">Black</option>
+                   <option value="white">White</option>
+                   <option value="purple">Purple</option>
+                   <option value="orange">Orange</option>
+                   <option value="none">Other/None</option>
+               </select>
+           </div>
+           <div class="choice">
+               <label for="accessoryCount">Number of accessories you're wearing:</label>
+               <input type="number" id="accessoryCount" name="accessoryCount" value=0>   
+           </div>
+           <input type="submit" value="Submit">
+         </form> 
+         <p id="results"></p>
+         <script src="calculations.js"></script>
+    </div>
+</body>
+
+</html>

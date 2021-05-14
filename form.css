@@ -1,0 +1,17 @@
+.choice {margin: 1em;}
+
+div div * {display: inline}
+
+input[type="number" i] {width: 3em}
+
+#content {
+    padding: 1em;
+    margin: 100px auto;
+    background: white; 
+    width: 30em;
+}
+
+body {
+ background-image: url('bionicle.jpeg');
+ background-repeat: no-repeat;
+}
