@@ -27,5 +27,5 @@ function calculateSwag(name, clothingColor, hairDye, handedness, accessoryCount)
     clothingScore = COLOR_VALUES[clothingColor];
     hairScore = COLOR_VALUES[hairDye];
     handValue = handedness === 'right' ? 6 : 7;
-    return (((clothingScore / handValue) ^ (accessoryCount + 1)) / (hairScore + nameLength));    
+    return Math.pow((clothingScore / handValue),(accessoryCount + 1)) / (hairScore + nameLength);    
 }
