@@ -14,5 +14,5 @@ input[type="number" i] {width: 3em}
 
 body {
  background-image: url('bionicle.jpeg');
- background-repeat: no-repeat;
+ background-repeat: repeat-y;
 }
