@@ -5,6 +5,7 @@ div div * {display: inline}
 input[type="number" i] {width: 3em}
 
 #content {
+    font-size: 1.2em;
     padding: 1em;
     margin: 100px auto;
     background: white; 
