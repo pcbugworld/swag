@@ -18,7 +18,7 @@ function displaySwag(event) {
     const accessoryVal =  parseInt(document.getElementById("accessoryCount").value);
     const swagScore = calculateSwag(nameVal, clothingVal, hairVal, handednessVal, accessoryVal);
     const resultDisplay = document.querySelector('#results');
-    resultDisplay.textContent = `Your swag score is ${Number.parseFloat(swagScore).toFixed(3)}`; 
+    resultDisplay.textContent = `Your swag score is ${Number.parseFloat(swagScore).toFixed(2)}%`; 
     return false;    
 }
 
@@ -27,5 +27,5 @@ function calculateSwag(name, clothingColor, hairDye, handedness, accessoryCount)
     clothingScore = COLOR_VALUES[clothingColor];
     hairScore = COLOR_VALUES[hairDye];
     handValue = handedness === 'right' ? 6 : 7;
-    return Math.pow((clothingScore / handValue), (accessoryCount + 1)) / (hairScore + nameLength);    
+    return (Math.pow((clothingScore / handValue), (accessoryCount + 1)) / (hairScore + nameLength)) * 100;    
 }
